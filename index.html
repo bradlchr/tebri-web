@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#FAF5EC">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="Tomi — Mid-Century Modern personal reading companion, book tracker, barcode scanner, and Gemini AI assistant.">
-  <title>Tomi — Personal Reading Companion</title>
+  <meta name="description" content="Tebri — Mid-Century Modern personal reading companion, book tracker, barcode scanner, and Gemini AI assistant.">
+  <title>Tebri — Personal Reading Companion</title>
 
   <!-- Favicon (matching Android App Icon: Walnut Wood, Atomic Disc, MCM Starburst & Open Book) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'%3E%3Cdefs%3E%3CclipPath id='s'%3E%3Crect width='108' height='108' rx='24' ry='24'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23s)'%3E%3Crect width='108' height='108' fill='%235D4037'/%3E%3Cpath fill='%234E342E' d='M0,18 C30,14 70,22 108,16 L108,20 C70,26 30,18 0,22 Z'/%3E%3Cpath fill='%234E342E' d='M0,84 C34,80 72,90 108,84 L108,88 C72,94 34,84 0,88 Z'/%3E%3Ccircle cx='54' cy='54' r='30' fill='%2312736B'/%3E%3Cpath fill='%23FFB300' d='M54,26 L57,46 L74,34 L62,51 L82,54 L62,57 L74,74 L57,62 L54,82 L51,62 L34,74 L46,57 L26,54 L46,51 L34,34 L51,46 Z'/%3E%3Cpath fill='%232D2D2D' d='M34,46 C42,42 50,43 56,47 C62,43 70,42 78,46 L78,74 C70,70 62,71 56,75 C50,71 42,70 34,74 Z'/%3E%3Cpath fill='%23FAF5EC' d='M31,43 C39,39 47,40 53,44 L53,72 C47,68 39,67 31,71 Z'/%3E%3Cpath fill='%23F1EAE2' d='M53,44 C59,40 67,39 75,43 L75,71 C67,67 59,68 53,72 Z'/%3E%3Cpath stroke='%235D4037' stroke-width='1.4' stroke-linecap='round' fill='none' d='M36,50 C40,48 44,48 48,50 M36,56 C40,54 44,54 48,56 M58,50 C62,48 66,48 70,50 M58,56 C62,54 66,54 70,56'/%3E%3Cpath fill='%23E64A19' d='M64,41 L69,40 L69,58 L66.5,55 L64,58 Z'/%3E%3C/g%3E%3C/svg%3E">
@@ -169,7 +169,7 @@
     }
 
     /* App Shell - Modern Web App Layout (Adapts fluidly from Mobile to 1560px Desktop) */
-    .tomi-app {
+    .tebri-app {
       min-height: 100vh;
       width: 100%;
       max-width: 1560px;
@@ -188,14 +188,14 @@
       [data-theme="dark"] body {
         background-color: #14110F;
       }
-      .tomi-app {
+      .tebri-app {
         box-shadow: 0 0 60px rgba(31, 27, 24, 0.12);
         border-left: 1px solid var(--border-card);
         border-right: 1px solid var(--border-card);
       }
     }
 
-    .tomi-header.tomi-header {
+    .tebri-header.tebri-header {
       position: sticky;
       top: 0;
       z-index: 40;
@@ -290,7 +290,7 @@
     @media (min-width: 769px) {
       .desktop-header-nav { display: flex !important; }
       .mobile-only { display: none !important; }
-      .tomi-nav { display: none !important; }
+      .tebri-nav { display: none !important; }
       .screen-container { padding-bottom: 48px; }
       .fab-voice { bottom: 32px !important; right: 32px !important; }
       .toast-notice { bottom: 32px !important; }
@@ -298,7 +298,7 @@
     @media (max-width: 768px) {
       .desktop-header-nav { display: none !important; }
       .mobile-only { display: inline-flex !important; }
-      .tomi-nav { display: flex !important; }
+      .tebri-nav { display: flex !important; }
     }
 
     .brand-wrap { display: flex; align-items: center; gap: 10px; }
@@ -371,7 +371,7 @@
     /* ==========================================================================
        3. NAVIGATION BAR, FAB & GOOGLE SYNC
        ========================================================================== */
-    .tomi-nav {
+    .tebri-nav {
       position: fixed;
       bottom: 0;
       left: 50%;
@@ -1457,9 +1457,9 @@
   </style>
 </head>
 <body>
-  <div class="tomi-app">
+  <div class="tebri-app">
         <!-- Header -->
-        <header class="tomi-header">
+        <header class="tebri-header">
           <div class="brand-wrap">
             <div class="brand-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1467,7 +1467,7 @@
               </svg>
             </div>
             <div>
-              <div class="brand-title">TOMI <span style="font-size: 15px; color: var(--tertiary);">✦</span></div>
+              <div class="brand-title">TEBRI <span style="font-size: 15px; color: var(--tertiary);">✦</span></div>
               <div class="brand-subtitle">Reading Companion</div>
             </div>
           </div>
@@ -1713,7 +1713,7 @@
                 <!-- Signed Out View -->
                 <div id="google-signed-out-view">
                   <p class="setting-desc" style="margin-bottom: 12px; line-height: 1.5;">
-                    Sign in with your Google account to automatically synchronize your reading library, progress, notes, and goals across your Android phone and desktop using your private Google Drive AppData folder (<code>tomi_cloud_sync.json</code>).
+                    Sign in with your Google account to automatically synchronize your reading library, progress, notes, and goals across your Android phone and desktop using your private Google Drive AppData folder (<code>tebri_cloud_sync.json</code>).
                   </p>
                   <button type="button" class="google-signin-btn" id="btn-google-signin">
                     <svg width="18" height="18" viewBox="0 0 48 48">
@@ -1750,7 +1750,7 @@
                       <span id="google-sync-status-text" style="font-size: 12px; font-weight: 700; color: var(--text-main);">Connected to Google Drive AppData</span>
                     </div>
                     <div id="google-sync-subtext" style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-                      Database: tomi_cloud_sync.json • Synced across Android & Web
+                      Database: tebri_cloud_sync.json • Synced across Android & Web
                     </div>
                   </div>
 
@@ -1815,15 +1815,15 @@
               </div>
 
               <div style="text-align: center; padding: 10px; color: var(--text-subtle); font-size: 11px;">
-                <p><strong>Tomi Web</strong> • Pure HTML5 Single-File Edition</p>
-                <p style="margin-top: 2px;">Optimized for Google Pixel 11 Pro • IndexedDB Offline Storage</p>
+                <p><strong>Tebri Web</strong> • Pure HTML5 Single-File Edition</p>
+                <p style="margin-top: 2px;">IndexedDB Offline Storage • <a href="privacy.html" style="color: var(--secondary); text-decoration: underline;">Privacy Policy</a></p>
               </div>
             </div>
           </section>
         </main>
 
         <!-- Voice FAB -->
-        <button class="fab-voice" id="fab-voice-assistant" title="Tomi Gemini Reading Assistant">
+        <button class="fab-voice" id="fab-voice-assistant" title="Tebri Gemini Reading Assistant">
           <div class="gemini-glow"></div>
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
@@ -1832,7 +1832,7 @@
         </button>
 
         <!-- Bottom Nav -->
-        <nav class="tomi-nav">
+        <nav class="tebri-nav">
           <button class="nav-item active" data-tab="library">
             <div class="nav-pill">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -1992,7 +1992,7 @@
                 <button type="button" class="btn btn-outline" id="btn-oauth-sheet-close" style="padding: 4px 10px; font-size: 11px;">✕ Close</button>
               </div>
               <p style="font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
-                Tomi Web synchronizes with the Android native app via your private Google Drive AppData folder (<code>tomi_cloud_sync.json</code>).
+                Tebri Web synchronizes with the Android native app via your private Google Drive AppData folder (<code>tebri_cloud_sync.json</code>).
               </p>
               <div style="background: var(--bg-surface-variant); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 12px; font-size: 12px; line-height: 1.5; margin-bottom: 14px;">
                 <div style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Quick Setup Guide:</div>
@@ -2269,10 +2269,10 @@
     };
 
     // --- 3. INDEXEDDB PERSISTENCE ---
-    const DB_NAME = 'tomi_reading_companion';
+    const DB_NAME = 'tebri_reading_companion';
     const DB_VERSION = 1;
 
-    class TomiDB {
+    class TebriDB {
       constructor() { this.db = null; }
       async init() {
         if (this.db) return this.db;
@@ -2502,7 +2502,7 @@
       }
     }
 
-    const db = new TomiDB();
+    const db = new TebriDB();
 
     // --- 4. GOOGLE BOOKS & OPENLIBRARY APIS ---
     async function searchOnlineBooks(query) {
@@ -2570,7 +2570,7 @@
     // --- 4.1 GOOGLE DRIVE APPDATA CLOUD SYNC (ANDROID PARITY) ---
     const DEFAULT_GEMINI_KEY = 'AIzaSyCJ2OYvLYFGuQwn3_pMDcznm_CLF_0VThc';
     const DEFAULT_GOOGLE_CLIENT_ID = '354727764260-m1r7sqcn84bi7vsskl2crvl1tkpapbsg.apps.googleusercontent.com';
-    const SYNC_FILE_NAME = 'tomi_cloud_sync.json';
+    const SYNC_FILE_NAME = 'tebri_cloud_sync.json';
 
     function norm(s) {
       return String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -2747,7 +2747,7 @@
         }
         const clientId = this.clientId;
         if (window.location.protocol === 'file:' || window.location.protocol === 'content:' || window.location.origin === 'null') {
-          throw new Error('Google OAuth requires an HTTP/HTTPS web origin. Please open the app via https://bradlchr.github.io/tomi-web/ (Google strictly blocks sign-in from local content:// and file:// storage).');
+          throw new Error('Google OAuth requires an HTTP/HTTPS web origin. Please open the app via https://bradlchr.github.io/tebri-web/ (Google strictly blocks sign-in from local content:// and file:// storage).');
         }
 
         if (!clientId) {
@@ -2783,7 +2783,7 @@
                   await this.db.setSetting('google_user', null);
                   this.syncState = {
                     status: 'error',
-                    message: 'Google Drive permission was not granted. Please sign in again and ensure the "See, edit, create, and delete only its own configuration data in Google Drive" checkbox is checked so Tomi can sync your books.'
+                    message: 'Google Drive permission was not granted. Please sign in again and ensure the "See, edit, create, and delete only its own configuration data in Google Drive" checkbox is checked so Tebri can sync your books.'
                   };
                   this.notify();
                   return reject(new Error('Google Drive permission was not granted. Please check the permission box in Google Sign-In.'));
@@ -2874,7 +2874,7 @@
         this.notify();
 
         try {
-          // 1. Search for tomi_cloud_sync.json in appDataFolder
+          // 1. Search for tebri_cloud_sync.json in appDataFolder
           const searchUrl = `https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&q=name='${SYNC_FILE_NAME}' and trashed=false&fields=files(id,name)`;
           const searchRes = await fetch(searchUrl, {
             headers: { Authorization: `Bearer ${this.accessToken}` }
@@ -2940,7 +2940,7 @@
 
           // 5. Serialize and upload to Google Drive
           const payload = {
-            format: "tomi-backup",
+            format: "tebri-backup",
             version: 1,
             exportedAt: Date.now(),
             annualGoal: mergedGoal,
@@ -2995,7 +2995,7 @@
               throw new Error(`Drive update error (${updateRes.status}): ${await updateRes.text()}`);
             }
           } else {
-            const boundary = '-------tomi314159265358979323846';
+            const boundary = '-------tebri314159265358979323846';
             const delimiter = "\r\n--" + boundary + "\r\n";
             const closeDelim = "\r\n--" + boundary + "--";
 
@@ -3043,8 +3043,8 @@
           };
           this.notify();
 
-          if (window.tomiApp) {
-            await window.tomiApp.refreshLibrary();
+          if (window.tebriApp) {
+            await window.tebriApp.refreshLibrary();
           }
 
           return { success: true, bookCount: mergedBooks.length };
@@ -3360,7 +3360,7 @@
             await db.updateBook(activeBook);
             await db.addReadingLog({ bookId: activeBook.id, pagesRead: num });
             Haptics.success();
-            window.tomiApp?.refreshLibrary();
+            window.tebriApp?.refreshLibrary();
             this.speak(`Updated! You are now on page ${activeBook.currentPage} of ${activeBook.title}. Keep up the great reading!`);
             return;
           }
@@ -3394,12 +3394,12 @@
           }
         }
 
-        this.speak("I am your Tomi reading companion! Ask me for a book recommendation, ask to log pages, or ask for your goal progress.");
+        this.speak("I am your Tebri reading companion! Ask me for a book recommendation, ask to log pages, or ask for your goal progress.");
       }
 
       async callGemini(q, key) {
         const books = await db.getAllBooks();
-        const sys = `You are Tomi, an insightful Mid-Century Modern reading companion.
+        const sys = `You are Tebri, an insightful Mid-Century Modern reading companion.
 User's books: ${books.map(b => `"${b.title}" (${b.status}, p.${b.currentPage}/${b.pageCount})`).join(', ')}.
 Keep answers short and warm (1-2 sentences for audio).`;
 
@@ -3445,7 +3445,7 @@ Keep answers short and warm (1-2 sentences for audio).`;
       }
     }
 
-    // --- 8. MAIN TOMI WEB APP CONTROLLER ---
+    // --- 8. MAIN TEBRI WEB APP CONTROLLER ---
     class MainApp {
       constructor() {
         this.currentTab = 'library';
@@ -3654,7 +3654,7 @@ Keep answers short and warm (1-2 sentences for audio).`;
               <div style="font-size: 38px; color: var(--tertiary);">✦</div>
               <h4 style="font-family: var(--font-serif); font-size: 18px; color: var(--text-main); margin: 8px 0 4px 0;">No books on this shelf</h4>
               <p style="font-size: 13px; margin-bottom: 14px;">Explore curated classics or scan an ISBN.</p>
-              <button class="btn btn-secondary" onclick="window.tomiApp.switchTab('discover')">+ Discover Books</button>
+              <button class="btn btn-secondary" onclick="window.tebriApp.switchTab('discover')">+ Discover Books</button>
             </div>
           `;
           return;
@@ -4848,7 +4848,7 @@ Keep answers short and warm (1-2 sentences for audio).`;
             dot.className = 'sync-indicator-dot';
             statusText.textContent = 'Connected to Google Drive AppData';
             const timeStr = state.syncState.lastSynced ? new Date(state.syncState.lastSynced).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Never';
-            subText.textContent = `Database: tomi_cloud_sync.json • Last synced: ${timeStr}`;
+            subText.textContent = `Database: tebri_cloud_sync.json • Last synced: ${timeStr}`;
           }
         } else {
           signedInView.style.display = 'none';
@@ -4915,7 +4915,7 @@ Keep answers short and warm (1-2 sentences for audio).`;
           const json = JSON.stringify({ version: 1, books, logs, exportedAt: new Date().toISOString() }, null, 2);
           const a = document.createElement('a');
           a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
-          a.download = `tomi-backup-${new Date().toISOString().slice(0,10)}.json`;
+          a.download = `tebri-backup-${new Date().toISOString().slice(0,10)}.json`;
           a.click();
           this.toast('Backup downloaded');
         });
@@ -4998,7 +4998,7 @@ Keep answers short and warm (1-2 sentences for audio).`;
 
     // Initialize on page load
     window.addEventListener('DOMContentLoaded', () => {
-      window.tomiApp = new MainApp();
+      window.tebriApp = new MainApp();
     });
   </script>
 </body>

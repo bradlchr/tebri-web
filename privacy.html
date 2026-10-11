@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Tebri Reading Companion</title>
+  <meta name="description" content="Privacy Policy for Tebri (Android Application and Web Companion). Learn how your reading data, camera access, and Google Drive sync are handled with an offline-first, zero-tracking philosophy.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-cream: #FAF6EE;
+      --bg-card: #FFFFFF;
+      --text-main: #2B231D;
+      --text-muted: #6E5D4F;
+      --teal-primary: #12736B;
+      --teal-light: #E0F2F1;
+      --mustard: #E09F3E;
+      --mustard-light: #FFF8E7;
+      --terracotta: #C85A32;
+      --terracotta-light: #FBECE8;
+      --walnut: #3E2723;
+      --border-color: #E8DAC8;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-sm: 0 2px 8px rgba(43, 35, 29, 0.05);
+      --shadow-md: 0 4px 16px rgba(43, 35, 29, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 2px dashed var(--border-color);
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--teal-light);
+      color: var(--teal-primary);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .starburst {
+      color: var(--mustard);
+      font-size: 18px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 42px;
+      font-weight: 400;
+      color: var(--text-main);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .meta-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .quick-badges {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .badge-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 18px 16px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .badge-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .badge-icon {
+      font-size: 26px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .badge-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .badge-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .policy-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 44px 40px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 640px) {
+      .policy-content {
+        padding: 24px 20px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 24px;
+      color: var(--teal-primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .section-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--teal-light);
+      color: var(--teal-primary);
+      padding: 2px 10px;
+      border-radius: 6px;
+    }
+
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--walnut);
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .callout {
+      background: var(--mustard-light);
+      border-left: 4px solid var(--mustard);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--text-main);
+    }
+
+    .callout strong {
+      color: var(--walnut);
+    }
+
+    .callout-teal {
+      background: var(--teal-light);
+      border-left: 4px solid var(--teal-primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      color: var(--text-main);
+    }
+
+    code {
+      background: rgba(43, 35, 29, 0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 14px;
+      color: var(--walnut);
+    }
+
+    a {
+      color: var(--teal-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--terracotta);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand-badge">
+        <span class="starburst">✦</span> TEBRI READING COMPANION <span class="starburst">✦</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="meta-subtitle">
+        Effective Date: October 11, 2026 &bull; Application ID: <code>com.droid.tebri</code>
+      </p>
+    </header>
+
+    <div class="quick-badges">
+      <div class="badge-card">
+        <span class="badge-icon">🔒</span>
+        <div class="badge-title">Offline-First</div>
+        <div class="badge-desc">Your library stays securely in local on-device SQLite storage.</div>
+      </div>
+      <div class="badge-card">
+        <span class="badge-icon">🚫</span>
+        <div class="badge-title">Zero Ads or Trackers</div>
+        <div class="badge-desc">No tracking SDKs, analytics scripts, or third-party brokers.</div>
+      </div>
+      <div class="badge-card">
+        <span class="badge-icon">☁️</span>
+        <div class="badge-title">Private Cloud Sync</div>
+        <div class="badge-desc">Direct sync to your personal Google Drive AppData folder.</div>
+      </div>
+      <div class="badge-card">
+        <span class="badge-icon">📷</span>
+        <div class="badge-title">Local Camera Scanning</div>
+        <div class="badge-desc">ISBN barcodes scanned locally; no photos saved or uploaded.</div>
+      </div>
+    </div>
+
+    <div class="policy-content">
+
+      <!-- SECTION 1 -->
+      <section class="section">
+        <h2><span class="section-num">01</span> Introduction & Core Principles</h2>
+        <p>
+          Welcome to <strong>Tebri</strong> ("we", "our", or "the app"), a Mid-Century Modern personal reading tracker, bookshelf organizer, and reading habit companion available as a native Android application and web application.
+        </p>
+        <p>
+          We believe your reading habits, thoughts, notes, and personal book collections are intimate and private. Tebri is engineered from the ground up on an <strong>offline-first</strong> architectural foundation. We do not sell your data, we do not show advertisements, and we do not profile your reading tastes.
+        </p>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section class="section">
+        <h2><span class="section-num">02</span> Information We Collect and Process</h2>
+
+        <h3>A. Reading Library Data (On-Device)</h3>
+        <p>
+          When you use Tebri, you create and manage reading records including:
+        </p>
+        <ul>
+          <li>Books you add (titles, authors, ISBNs, page counts, genres, descriptions, publication years, and cover artwork URLs).</li>
+          <li>Reading statuses (<em>Want to Read / TBR</em>, <em>Currently Reading</em>, <em>Finished</em>, <em>Did Not Finish / DNF</em>).</li>
+          <li>Reading logs (pages read per session, dates, timestamps, session duration).</li>
+          <li>Personal notes, highlighted quotes, thoughts, star ratings, and written reviews.</li>
+          <li>Annual reading targets and daily page goals.</li>
+        </ul>
+        <p>
+          <strong>Storage:</strong> All of this data is stored locally on your device in an isolated, private Room/SQLite database (Android) or IndexedDB (Web). It never leaves your device unless you explicitly opt in to Google Drive synchronization or manually export a JSON backup file.
+        </p>
+
+        <h3>B. Camera Permission (<code>android.permission.CAMERA</code>)</h3>
+        <p>
+          Tebri includes an integrated barcode scanner to quickly look up books by their physical ISBN barcode.
+        </p>
+        <ul>
+          <li>The camera is activated <strong>only</strong> when you open the Barcode Scanner screen.</li>
+          <li>Frames are processed transiently in real time using the embedded on-device ZXing recognition engine solely to detect numeric ISBN barcodes.</li>
+          <li><strong>No photos or videos are ever captured, saved to disk, or transmitted over any network.</strong></li>
+        </ul>
+
+        <h3>C. Microphone & Audio</h3>
+        <p>
+          The production release version of Tebri on Google Play does <strong>not</strong> request, access, or utilize microphone permissions (<code>RECORD_AUDIO</code>).
+        </p>
+
+        <h3>D. Media & Device Storage</h3>
+        <p>
+          When you export or import a library backup (JSON format) or import a Goodreads CSV reading history, Tebri utilizes standard Android system file pickers (Storage Access Framework) to read or save only the specific file you choose. Tebri includes <code>.nomedia</code> files in its application directories to ensure internal databases and caches are never indexed or synced to Google Photos or cloud gallery apps.
+        </p>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section class="section">
+        <h2><span class="section-num">03</span> Optional Google Services & Cloud Sync</h2>
+        <p>
+          Tebri provides optional cross-device synchronization between your Android devices and the Tebri Web companion.
+        </p>
+        <div class="callout-teal">
+          <strong>Direct Client-to-Drive Architecture:</strong> Tebri operates with <em>no proprietary intermediary server</em>. Synchronization occurs directly between your device and Google's servers using your authenticated Google account.
+        </div>
+        <ul>
+          <li>
+            <strong>Google Sign-In:</strong> If you choose to enable cloud sync, you sign in with your Google Account using official Google Identity Services / Play Services. We receive basic profile information (display name, email address, profile photo URL) solely to render your signed-in state in Settings. We never receive or store your Google password.
+          </li>
+          <li>
+            <strong>Google Drive AppData Scope (<code>drive.appdata</code>):</strong> Tebri requests access <em>strictly and exclusively</em> to your private Google Drive Application Data folder (<code>https://www.googleapis.com/auth/drive.appdata</code>).
+          </li>
+          <li>
+            <strong>Restricted Access:</strong> Tebri can <strong>only</strong> read and write its own configuration file (<code>tebri_cloud_sync.json</code>). It has <strong>zero access</strong> to your personal Google Drive documents, photos, spreadsheets, or any other files.
+          </li>
+          <li>
+            The developer of Tebri has no access to your Google account or your cloud sync file.
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section class="section">
+        <h2><span class="section-num">04</span> External Book Metadata APIs</h2>
+        <p>
+          To enrich book records with cover art, author names, page counts, and descriptions, Tebri makes requests to the following public book catalog services:
+        </p>
+        <ul>
+          <li><strong>Google Books API:</strong> Used to search for titles or lookup ISBN numbers. Governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+          <li><strong>Open Library API:</strong> Operated by the Internet Archive, used as an open-access book catalog fallback. Governed by the <a href="https://archive.org/about/terms.php" target="_blank" rel="noopener">Internet Archive Privacy Policy</a>.</li>
+        </ul>
+        <p>
+          These requests contain only the book search query or ISBN number. No personal user identifiers, account data, or reading logs are transmitted in these requests.
+        </p>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section class="section">
+        <h2><span class="section-num">05</span> Zero Advertising, Tracking, or Analytics</h2>
+        <div class="callout">
+          <strong>No Ads. No Trackers. No Data Brokers.</strong><br>
+          Tebri contains zero third-party advertising SDKs, zero user tracking libraries, and zero behavioral analytics platforms (no Google Analytics, no Firebase Analytics, no Meta Pixel, no data aggregators).
+        </div>
+      </section>
+
+      <!-- SECTION 6 -->
+      <section class="section">
+        <h2><span class="section-num">06</span> Data Retention, Control, and Deletion</h2>
+        <p>
+          You have absolute sovereignty and complete control over your data:
+        </p>
+        <ul>
+          <li><strong>In-App Deletion:</strong> You can edit or delete any individual book, reading log entry, quote, or note directly within the app at any time.</li>
+          <li><strong>Local Data Wipe:</strong> You can completely and permanently delete all local data by choosing <em>Clear Storage / Clear Data</em> in your device's Android App Settings, or by uninstalling the app.</li>
+          <li><strong>Cloud Sync Disconnection &amp; Deletion:</strong> You can disconnect your Google account at any time in Tebri's Settings screen. You can also permanently revoke Tebri's access and remove the app data file via your Google Account Management page at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+          <li><strong>Data Portability:</strong> You can export your full library, logs, and settings to an unencrypted, human-readable JSON backup file at any time via <em>Settings &rarr; Export JSON</em>.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 7 -->
+      <section class="section">
+        <h2><span class="section-num">07</span> Security</h2>
+        <p>
+          All network communications with external services (Google Books API, Open Library, Google Drive API, Google Sign-In) are conducted strictly over encrypted <strong>Transport Layer Security (TLS 1.2+ / HTTPS)</strong>. Local data is protected within Android's sandboxed application container.
+        </p>
+      </section>
+
+      <!-- SECTION 8 -->
+      <section class="section">
+        <h2><span class="section-num">08</span> Children's Privacy (COPPA Compliance)</h2>
+        <p>
+          Tebri does not target children under the age of 13, nor do we knowingly collect any personally identifiable information from children. If you believe that a child has provided us with personal information, please contact us so we can take appropriate steps.
+        </p>
+      </section>
+
+      <!-- SECTION 9 -->
+      <section class="section">
+        <h2><span class="section-num">09</span> Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect modifications in features, legal standards, or operational practices. Any changes will be posted on this page with an updated "Effective Date". Continued use of the app after modifications constitutes acceptance of the updated terms.
+        </p>
+      </section>
+
+      <!-- SECTION 10 -->
+      <section class="section">
+        <h2><span class="section-num">10</span> Contact &amp; Inquiries</h2>
+        <p>
+          If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy in Tebri, please open an issue or reach out via our GitHub repository:
+        </p>
+        <p>
+          <strong>GitHub Issues:</strong> <a href="https://github.com/bradlchr/Tebri/issues" target="_blank" rel="noopener">https://github.com/bradlchr/Tebri/issues</a><br>
+          <strong>Web Companion:</strong> <a href="https://bradlchr.github.io/tebri-web/" target="_blank" rel="noopener">https://bradlchr.github.io/tebri-web/</a>
+        </p>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://bradlchr.github.io/tebri-web/">Tebri Web App</a>
+        <span>&bull;</span>
+        <a href="https://github.com/bradlchr/Tebri">GitHub Source</a>
+        <span>&bull;</span>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <p>&copy; 2026 Tebri. Crafted with Mid-Century Modern elegance.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
